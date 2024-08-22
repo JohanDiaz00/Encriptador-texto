@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleeapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Img/logo.png" alt="logo">
+    </header>
+    <main>
+        <form class="form__seleccion">
+            <textarea class="form__input" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="btn__container">
+                <div class="alert__msj">
+                    <img src="Img/alerta.png" alt="alerta"> <span>Solo letras minúsculas y sin acentos</span></div>
+        </div>
+            <div class="submit__container">
+            </div>
+            <input class="form__btn" type="submit" value="Encriptar">
+            <input class="form__btn form__btn--secundary" type="submit" value="Desencriptar">
+            </div>
+        </form>
+        <aside class="resultado">
+            <img src="Img/persona.png" alt="img__persona" class="resultado__img">
+            <div class="loader hidden"></div>
+            <div class="resultado__container">
+                <h3 class="resultado__titulo">Ningun mensaje encontrado</h3>
+                <p class="resultado__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="resultado__btn form__btn form__btn--secundary hidden">Copiar</button>
+            </div>
+        </aside>
+    </main> 
+    <script src="index.js"></script>  
+</body>
+</html>
